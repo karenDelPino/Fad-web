@@ -1,0 +1,187 @@
+
+ /* Paleta basada en el logo */
+      :root {
+        --primary: #ff9800;
+        --secondary: #ffc107;
+        --dark: #111;
+        --light: #fff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: var(--dark);
+        color: var(--light);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: var(--dark);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      header img {
+        height: 60px;
+      }
+
+      .search-bar {
+        flex: 1;
+        max-width: 400px;
+        margin: 0 20px;
+      }
+      .hero {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: var(--dark);
+}
+
+      .search-bar input {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+        background-color: var(--dark);
+        flex-wrap: wrap;
+      }
+
+      .category-btn {
+        padding: 8px 18px;
+        border-radius: 25px;
+        border: 2px solid var(--primary);
+        background-color: transparent;
+        color: var(--primary);
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .category-btn.active,
+      .category-btn:hover {
+        background-color: var(--primary);
+        color: var(--dark);
+      }
+
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .card {
+        background-color: #1c1c1c;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .card-content h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: var(--secondary);
+      }
+
+      .card-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #ccc;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .whatsapp-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 30px;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+      }
+
+      .whatsapp-btn:hover {
+        background-color: #1ebe57;
+      }
+.ubicacion {
+  background-color: var(--elev);
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--light);
+}
+
+.ubicacion h2 {
+  font-size: 24px;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.ubicacion p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+}
+
+.mapa {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--muted);
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
