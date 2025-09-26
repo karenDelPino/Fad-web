@@ -2,9 +2,16 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Fad Grill - Menú</title>
-    <link rel="icon" href="img/logo-hamburguesa.png" type="image/png" />
+    <link
+      rel="icon"
+      href="img/logo-hamburguesa.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,87 +26,88 @@
         />
       </div>
     </header>
+
     <section class="hero">
       <img
         src="logo-fondo-Trasnparente.png"
         alt="FAD Grill"
         class="hero-logo"
       />
-      
-      <h1 class="hero-title">¡Tenemos delivery!<img src="img/delivery.png" alt="Delivery en moto" class="delivery-icon" /></h1>
-      
-      <p class="hero-subtitle">🔥 Tu hambre no espera... y nosotros tampoco</p>
-
+      <h1 class="hero-title">
+        ¡Tenemos delivery!
+        <img
+          src="img/delivery.png"
+          alt="Delivery en moto"
+          class="delivery-icon"
+        />
+      </h1>
+      <p class="hero-subtitle">
+        🔥 Tu hambre no espera... y nosotros tampoco
+      </p>
     </section>
+
     <div class="categories">
-      <button class="category-btn active" onclick="filterMenu('all')">
+      <button
+        class="category-btn active"
+        onclick="filterMenu('all')"
+      >
         Todos
       </button>
-      <button class="category-btn" onclick="filterMenu('pizzas')">
+      <button
+        class="category-btn"
+        onclick="filterMenu('pizzas')"
+      >
         Pizzas
       </button>
-      <button class="category-btn" onclick="filterMenu('panchos')">
+      <button
+        class="category-btn"
+        onclick="filterMenu('hamburguesas')"
+      >
+        Hamburguesas
+      </button>
+      <button
+        class="category-btn"
+        onclick="filterMenu('panchos')"
+      >
         Panchos
       </button>
-      <button class="category-btn" onclick="filterMenu('lomitos')">
+      <button
+        class="category-btn"
+        onclick="filterMenu('lomos')"
+      >
         Lomos
       </button>
-      <button class="category-btn" onclick="filterMenu('empanadas')">
+       <button
+        class="category-btn"
+        onclick="filterMenu('vegetarianos')"
+      >
+        Vegetarianos
+      </button>
+      <button
+        class="category-btn"
+        onclick="filterMenu('veganos')"
+      >
+        Veganos
+      </button>
+      <button
+        class="category-btn"
+        onclick="filterMenu('empanadas')"
+      >
         Empanadas
       </button>
-       <button class="category-btn" onclick="filterMenu('bebidas')">
+      <button
+        class="category-btn"
+        onclick="filterMenu('bebidas')"
+      >
         Bebidas
       </button>
+     
     </div>
 
     <section class="menu" id="menu">
-      <!-- Tarjetas ficticias -->
-      <div class="card" data-category="pizzas">
-        <img src="img/pizza.jpg" alt="Pizza Muzza" />
-        <div class="card-content">
-          <h3>Pizza Muzza</h3>
-          <p>Masa casera, salsa de tomate, muzzarella</p>
-          <span class="price">$2500</span>
-        </div>
-      </div>
-
-      <div class="card" data-category="panchos">
-        <img src="img/pancho.jpg" alt="Pancho Especial" />
-        <div class="card-content">
-          <h3>Pancho Especial</h3>
-          <p>Salchicha, cheddar, panceta, papas pay</p>
-          <span class="price">$1500</span>
-        </div>
-      </div>
-
-      <div class="card" data-category="lomitos">
-        <img src="img/lomo.jpg" alt="Lomo Completo" />
-        <div class="card-content">
-          <h3>Lomo Completo</h3>
-          <p>Carne, jamón, queso, tomate, lechuga</p>
-          <span class="price">$3500</span>
-        </div>
-      </div>
-
-      <div class="card" data-category="empanadas">
-        <img src="img/empanadas.jpg" alt="Empanadas de Carne" />
-        <div class="card-content">
-          <h3>Empanadas de Carne</h3>
-          <p>Carne cortada a cuchillo, aceitunas, especias</p>
-          <span class="price">$500</span>
-        </div>
-      </div>
-       <div class="card" data-category="bebidas">
-        <img src="img/cerveza.png" alt="Cerveza" />
-        <div class="card-content">
-          <h3>Cerveza</h3>
-          <p>Quilmes</p>
-          <span class="price">$500</span>
-        </div>
-      </div>
+      <!-- Aquí se inyectarán las cards -->
     </section>
 
-    <!-- Botón WhatsApp -->
     <a
       href="https://wa.me/5492612189938?text=Hola%20quiero%20hacer%20un%20pedido"
       target="_blank"
@@ -107,6 +115,8 @@
     >
       📲 Pedir por WhatsApp
     </a>
+   
+
     <section class="ubicacion">
       <h2>📍 ¿Dónde estamos?</h2>
       <p>FAD Grill — Las Vasijas. Luján de Cuyo, Mendoza</p>
@@ -122,42 +132,112 @@
         ></iframe>
       </div>
     </section>
+    
 
     <footer class="footer">
       <p>Autoria propia ©2025</p>
     </footer>
 
     <script>
-      function filterMenu(category) {
-        const cards = document.querySelectorAll(".card");
-        const buttons = document.querySelectorAll(".category-btn");
+      // ----------------------------------------
+      // 1. Variables de estado
+      // ----------------------------------------
+      let menuItems = [];
+      let currentCategory = 'all';
+      let currentSearch = '';
 
-        buttons.forEach((btn) => btn.classList.remove("active"));
-        event.target.classList.add("active");
+      // ----------------------------------------
+      // 2. Cargo menu.json al iniciar la página
+      // ----------------------------------------
+      window.addEventListener('DOMContentLoaded', () => {
+        fetch('menu.json')
+          .then((res) => res.json())
+          .then((data) => {
+            Object.entries(data).forEach(([section, items]) => {
+              items.forEach((item) => {
+                // guardo la sección en minúsculas
+                item._category = section.toLowerCase();
+                menuItems.push(item);
+              });
+            });
+            renderMenu();
+          })
+          .catch(console.error);
+      });
 
-        cards.forEach((card) => {
-          if (category === "all" || card.dataset.category === category) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
+      // ----------------------------------------
+      // 3. Función para dibujar tarjetas
+      // ----------------------------------------
+      function renderMenu() {
+        const container = document.getElementById('menu');
+        container.innerHTML = '';
+
+        menuItems
+          .filter((item) => {
+            // filtro por búsqueda
+            const matchesSearch = item.name
+              .toLowerCase()
+              .includes(currentSearch);
+
+            // filtro por categoría o subcategoría
+            let matchesCategory;
+            if (currentCategory === 'all') {
+              matchesCategory = true;
+            } else if (currentCategory === 'vegetarianos') {
+              // cualquier sección que contenga "vegetari"
+              matchesCategory = item._category.includes('vegetari');
+            } else if (currentCategory === 'veganos') {
+              // cualquier sección que contenga "vegana"
+              matchesCategory = item._category.includes('vegana');
+            } else {
+              matchesCategory = item._category === currentCategory;
+            }
+
+            return matchesCategory && matchesSearch;
+          })
+          .forEach((item) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.dataset.category = item._category;
+
+            card.innerHTML = `
+              <img src="${item.img}" alt="${item.name}" />
+              <div class="card-content">
+                <h3>${item.name}</h3>
+                <p>${item.desc}</p>
+                <span class="price">$${item.price ?? ''}</span>
+              </div>
+            `;
+            container.appendChild(card);
+          });
       }
 
-      function searchMenu() {
-        const input = document
-          .getElementById("searchInput")
-          .value.toLowerCase();
-        const cards = document.querySelectorAll(".card");
+      // ----------------------------------------
+      // 4. Función para filtrar por categoría
+      // ----------------------------------------
+      function filterMenu(category) {
+        currentCategory = category;
+        document
+          .querySelectorAll('.category-btn')
+          .forEach((btn) => {
+            btn.classList.toggle(
+              'active',
+              btn
+                .getAttribute('onclick')
+                .includes(`'${category}'`)
+            );
+          });
+        renderMenu();
+      }
 
-        cards.forEach((card) => {
-          const title = card.querySelector("h3").innerText.toLowerCase();
-          if (title.includes(input)) {
-            card.style.display = "block";
-          } else {
-            card.style.display = "none";
-          }
-        });
+      // ----------------------------------------
+      // 5. Función para filtrar por búsqueda
+      // ----------------------------------------
+      function searchMenu() {
+        currentSearch = document
+          .getElementById('searchInput')
+          .value.toLowerCase();
+        renderMenu();
       }
     </script>
   </body>

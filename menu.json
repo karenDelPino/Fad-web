@@ -1,0 +1,482 @@
+{
+  "Hamburguesas": [
+    {
+      "name": "Clásica Simple",
+      "desc": "1 medallón 130g, queso tybo, cebolla, salsa de tomate, lechuga, mayonesa casera y huevo. Con papas",
+      "price": 8000,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Clásica Doble",
+      "desc": "2 medallones 130g c/u, queso tybo, cebolla, salsa de tomate, lechuga, mayonesa casera y huevo. Con papas",
+      "price": 9500,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Cheddar",
+      "desc": "1 medallón 130g, extra cheddar, cebolla, salsa de tomate, mayonesa casera y huevo. Con papas",
+      "price": 8500,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Doble Cheddar",
+      "desc": "2 medallones 130g c/u, extra cheddar, cebolla, salsa de tomate, mayonesa casera y huevo. Con papas",
+      "price": 10000,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Bacon",
+      "desc": "1 medallón 130g, bacon, cheddar, cebolla, salsa de tomate, mayonesa casera y huevo. Con papas",
+      "price": 9000,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Doble Bacon",
+      "desc": "2 medallones 130g, bacon, cheddar, cebolla, salsa de tomate, mayonesa casera y huevo. Con papas",
+      "price": 10500,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Simple Palta",
+      "desc": "1 medallón 130g, palta, cebolla, salsa de tomate, lechuga, huevo, mayonesa casera. Con papas",
+      "price": 9000,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "Doble Palta",
+      "desc": "2 medallones 130g c/u, palta, cebolla, salsa de tomate, lechuga, huevo, mayonesa casera. Con papas",
+      "price": 10500,
+      "img": "img/hamburguesa.jpg"
+    },
+    {
+      "name": "FAD Especial",
+      "desc": "1 medallón especial relleno, cheddar, cebolla caramelizada, mayonesa especial y huevo. Con papas",
+      "price": 13000,
+      "img": "img/hamburguesa.jpg"
+    }
+  ],
+  "Hamburguesas Vegetarianas": [
+    {
+      "name": "Hamburguesa Vegetariana Simple",
+      "desc": "Medallón a elección (lenteja, zapallo, betarraga, acelga o soja), huevo, lechuga, tomate natural, mayonesa casera, cebolla y queso tybo. Con papas",
+      "price": 7500,
+      "img": "img/hamburguesa-vegetariana.jpg"
+    },
+    {
+      "name": "Hamburguesa Vegetariana Especial",
+      "desc": "Medallón a elección (lenteja, zapallo, betarraga, acelga o soja), huevo, lechuga, tomate natural, mayonesa casera, queso tybo y mix de vegetales. Con papas",
+      "price": 8000,
+      "img": "img/hamburguesa-vegetariana.jpg"
+    },
+    {
+      "name": "Hamburguesa Vegetariana con Palta",
+      "desc": "Medallón a elección (lenteja, zapallo, betarraga, acelga o soja), huevo, rúcula, tomate natural, mayonesa casera, queso tybo y palta. Con papas",
+      "price": 8500,
+      "img": "img/hamburguesa-vegetariana.jpg"
+    }
+  ],
+  "Hamburguesas Veganas": [
+    {
+      "name": "Hamburguesa Vegana de Soja",
+      "desc": "Medallón de soja, rúcula, tomate natural, ketchup y mix de verduras. Con papas",
+      "price": 7500,
+      "img": "img/hamburguesa-vegana.jpg"
+    },
+    {
+      "name": "Hamburguesa Vegana con Palta",
+      "desc": "Medallón de soja, rúcula, tomate natural, cebolla y palta. Con papas",
+      "price": 8000,
+      "img": "img/hamburguesa-vegana.jpg"
+    }
+  ],
+  "Lomos": [
+    {
+      "name": "Lomo Individual",
+      "desc": "Lomo veteado, huevo, lechuga, salsa de tomate, mayonesa casera y queso tybo. Pan árabe de 20 cm. Con papas",
+      "price": 12500,
+      "img": "img/lomo.jpg"
+    },
+    {
+      "name": "Lomo para Compartir",
+      "desc": "Lomo veteado, huevo, lechuga, salsa de tomate, mayonesa casera y queso tybo. Pan árabe de 40 cm. Con papas",
+      "price": 21000,
+      "img": "img/lomo.jpg"
+    },
+    {
+      "name": "Lomo FAD Especial",
+      "desc": "Lomo veteado, cheddar, bacon, lechuga, salsa de tomate, mayonesa casera y huevo. Pan árabe de 20 cm. Con papas",
+      "price": 15000,
+      "img": "img/lomo-especial.jpg"
+    }
+  ],
+  "Lomos Vegetarianos": [
+    {
+      "name": "Lomo Vegetariano",
+      "desc": "Mix de verduras, lechuga o rúcula, tomate natural, queso tybo, huevo y mayonesa casera",
+      "price": 9000,
+      "img": "img/lomo-vegetariano.jpg"
+    }
+  ],
+  "Pizzas": [
+    {
+      "name": "Muzzarella 8p",
+      "desc": "Salsa de tomate, muzzarella, orégano y aceitunas",
+      "price": 8000,
+      "img": "img/pizza-muzza.jpg"
+    },
+    {
+      "name": "Napolitana 8p",
+      "desc": "Salsa de tomate, muzzarella, tomate redondo natural, salsa de albahaca y aceitunas",
+      "price": 8500,
+      "img": "img/pizza-napolitana.jpg"
+    },
+    {
+      "name": "Muzza con Morrón 8p",
+      "desc": "Salsa de tomate, muzzarella, morrón, orégano y aceitunas",
+      "price": 8500,
+      "img": "img/pizza-morron.jpg"
+    },
+    {
+      "name": "Fugazza 8p",
+      "desc": "Salsa de tomate, muzzarella, cebolla salteada y aceitunas",
+      "price": 9000,
+      "img": "img/pizza-fugazza.jpg"
+    },
+    {
+      "name": "Especial 8p",
+      "desc": "Salsa de tomate, muzzarella, jamón cocido, morrones y aceitunas",
+      "price": 10000,
+      "img": "img/pizza-especial.jpg"
+    },
+    {
+      "name": "Muzza con Rúcula 8p",
+      "desc": "Salsa de tomate, muzzarella, orégano y rúcula",
+      "price": 8500,
+      "img": "img/pizza-rucula.jpg"
+    },
+    {
+      "name": "Muzza con Huevo 8p",
+      "desc": "Salsa de tomate, muzzarella, orégano, huevo y aceitunas",
+      "price": 9000,
+      "img": "img/pizza-huevo.jpg"
+    }
+  ],
+  "Milanesas": [
+    {
+      "name": "Milanesa Simple",
+      "desc": "Milanesa de ternera con papas",
+      "price": 12000,
+      "img": "img/milanesa.jpg"
+    },
+    {
+      "name": "Milanesa Napolitana",
+      "desc": "Milanesa de ternera, salsa de tomate y queso tybo. Con papas",
+      "price": 16000,
+      "img": "img/milanesa-napolitana.jpg"
+    },
+    {
+      "name": "Milanesa a Caballo",
+      "desc": "Milanesa de ternera con huevo",
+      "price": 14000,
+      "img": "img/milanesa-caballo.jpg"
+    },
+    {
+      "name": "Milanesa FAD Especial",
+      "desc": "Milanesa de ternera, salsa de la casa, muzzarella, jamón cocido, morrón y hierbas",
+      "price": 19000,
+      "img": "img/milanesa-especial.jpg"
+    }
+  ],
+  "Panchos": [
+    {
+      "name": "Pancho Simple",
+      "desc": "Con lluvia de papas y aderezo",
+      "price": 3000,
+      "img": "img/pancho.jpg"
+    },
+    {
+      "name": "Pancho con Poncho",
+      "desc": "Queso tybo, jamón cocido, con lluvia de papas y aderezo",
+      "price": 5000,
+      "img": "img/pancho.jpg"
+    },
+    {
+      "name": "Pancho Italiano",
+      "desc": "Tomate y palta",
+      "price": 6000,
+      "img": "img/pancho.jpg"
+    },
+    {
+      "name": "Pancho Doble Salchicha",
+      "desc": "Doble salchicha, lluvia de papas y aderezo",
+      "price": 5000,
+      "img": "img/pancho.jpg"
+    },
+    {
+      "name": "Pancho FAD Especial",
+      "desc": "Salsa especial de tomate, pimiento y cebolla con queso",
+      "price": 8000,
+      "img": "img/pancho-especial.jpg"
+    }
+  ],
+  "Panchos Vegetarianos": [
+    {
+      "name": "Pancho Vegetariano Simple",
+      "desc": "Con lluvia de papas y aderezo",
+      "price": 4000,
+      "img": "img/pancho-vegetariano.jpg"
+    },
+    {
+      "name": "Pancho Vegetariano con Palta",
+      "desc": "Palta con lluvia de papas y aderezo",
+      "price": 8000,
+      "img": "img/pancho-vegetariano.jpg"
+    },
+    {
+      "name": "Pancho Vegetariano Napolitano",
+      "desc": "Con tomate, queso tybo y aderezo",
+      "price": 6000,
+      "img": "img/pancho-vegetariano.jpg"
+    }
+  ],
+  "Empanadas": [
+    {
+      "name": "Empanadas de Carne",
+      "desc": "Carne cortada a cuchillo, especias",
+      "price": 9000,
+      "img": "img/empanadas-carne.jpg"
+    },
+    {
+      "name": "Empanada Caprese",
+      "desc": "Tomate, muzzarella y albahaca",
+      "price": 10000,
+      "img": "img/empanadas-caprese.jpg"
+    },
+    {
+      "name": "Empanadas JyM",
+      "desc": "Jamón y muzzarella",
+      "price": 10000,
+      "img": "img/empanadas-jym.jpg"
+    },
+    {
+      "name": "Empanadas de Humita",
+      "desc": "Choclo, salsa blanca y condimentos",
+      "price": 10000,
+      "img": "img/empanadas-humita.jpg"
+    },
+    {
+      "name": "Empanadas de Verdura",
+      "desc": "Mix de verduras salteadas",
+      "price": 10000,
+      "img": "img/empanadas-verdura.jpg"
+    }
+  ],
+  "Papas": [
+    {
+      "name": "Papas Simple Chica",
+      "desc": "Papas fritas clásicas",
+      "price": 4000,
+      "img": "img/papas.jpg"
+    },
+    {
+      "name": "Papas Simple Grande",
+      "desc": "Papas fritas clásicas",
+      "price": 7000,
+      "img": "img/papas.jpg"
+    },
+    {
+      "name": "Papas con Cheddar y Bacon Chica",
+      "desc": "Papas fritas con cheddar y bacon",
+      "price": 5000,
+      "img": "img/papas-cheddar.jpg"
+    },
+    {
+      "name": "Papas con Cheddar y Bacon Grande",
+      "desc": "Papas fritas con cheddar y bacon",
+      "price": 8000,
+      "img": "img/papas-cheddar.jpg"
+    },
+    {
+      "name": "Papas con Verdeo y Huevo Chica",
+      "desc": "Papas fritas con verdeo y huevo",
+      "price": 5000,
+      "img": "img/papas-verdeo.jpg"
+    },
+    {
+      "name": "Papas con Verdeo y Huevo Grande",
+      "desc": "Papas fritas con verdeo y huevo",
+      "price": 8000,
+      "img": "img/papas-verdeo.jpg"
+    },
+    {
+      "name": "Salchipapa Chica",
+      "desc": "Papas fritas con salchicha",
+      "price": 6000,
+      "img": "img/salchipapa.jpg"
+    },
+    {
+      "name": "Salchipapa Grande",
+      "desc": "Papas fritas con salchicha",
+      "price": 10000,
+      "img": "img/salchipapa.jpg"
+    }
+  ],
+  "Extras": [
+    {
+      "name": "Agregar Cheddar",
+      "desc": "Extra de queso cheddar",
+      "price": null,
+      "img": "img/extra-cheddar.jpg"
+    },
+    {
+      "name": "Agregar Bacon",
+      "desc": "Extra de bacon",
+      "price": null,
+      "img": "img/extra-bacon.jpg"
+    },
+    {
+      "name": "Agregar Medallón",
+      "desc": "Extra de medallón de carne",
+      "price": null,
+      "img": "img/extra-medallon.jpg"
+    },
+    {
+      "name": "Mix de Verdura",
+      "desc": "Extra de vegetales frescos",
+      "price": null,
+      "img": "img/extra-verdura.jpg"
+    }
+  ],
+  "Bebidas": [
+    {
+      "name": "Coca Cola 500ml",
+      "desc": "Gaseosa Coca Cola 500ml",
+      "price": null,
+      "img": "img/coca-500.jpg"
+    },
+    {
+      "name": "Coca Cola 1.5L",
+      "desc": "Gaseosa Coca Cola 1.5 litros",
+      "price": null,
+      "img": "img/coca-15.jpg"
+    },
+    {
+      "name": "Coca Cola 2.25L",
+      "desc": "Gaseosa Coca Cola 2.25 litros",
+      "price": null,
+      "img": "img/coca-225.jpg"
+    },
+    {
+      "name": "Fanta 500ml",
+      "desc": "Gaseosa Fanta 500ml",
+      "price": null,
+      "img": "img/fanta-500.jpg"
+    },
+    {
+      "name": "Fanta 1.5L",
+      "desc": "Gaseosa Fanta 1.5 litros",
+      "price": null,
+      "img": "img/fanta-15.jpg"
+    },
+    {
+      "name": "Fanta 2.25L",
+      "desc": "Gaseosa Fanta 2.25 litros",
+      "price": null,
+      "img": "img/fanta-225.jpg"
+    },
+    {
+      "name": "Sprite 500ml",
+      "desc": "Gaseosa Sprite 500ml",
+      "price": null,
+      "img": "img/sprite-500.jpg"
+    },
+    {
+      "name": "Sprite 1.5L",
+      "desc": "Gaseosa Sprite 1.5 litros",
+      "price": null,
+      "img": "img/sprite-15.jpg"
+    },
+    {
+      "name": "Sprite 2.25L",
+      "desc": "Gaseosa Sprite 2.25 litros",
+      "price": null,
+      "img": "img/sprite-225.jpg"
+    },
+    {
+      "name": "Agua Mineral 500ml",
+      "desc": "Agua mineral 500ml",
+      "price": null,
+      "img": "img/agua-500.jpg"
+    },
+    {
+      "name": "Agua Mineral 1.5L",
+      "desc": "Agua mineral 1.5 litros",
+      "price": null,
+      "img": "img/agua-15.jpg"
+    },
+    {
+      "name": "Agua Mineral 2.25L",
+      "desc": "Agua mineral 2.25 litros",
+      "price": null,
+      "img": "img/agua-225.jpg"
+    }
+  ],
+  "Bebidas con Alcohol": [
+    {
+      "name": "Cerveza Quilmes 473ml",
+      "desc": "Cerveza Quilmes lata 473ml",
+      "price": null,
+      "img": "img/quilmes-473.jpg"
+    },
+    {
+      "name": "Cerveza Quilmes 710ml",
+      "desc": "Cerveza Quilmes botella 710ml",
+      "price": null,
+      "img": "img/quilmes-710.jpg"
+    },
+    {
+      "name": "Cerveza Schneider 473ml",
+      "desc": "Cerveza Schneider lata 473ml",
+      "price": null,
+      "img": "img/schneider-473.jpg"
+    },
+    {
+      "name": "Cerveza Schneider 710ml",
+      "desc": "Cerveza Schneider botella 710ml",
+      "price": null,
+      "img": "img/schneider-710.jpg"
+    }
+  ],
+  "Vinos": [
+    {
+      "name": "Vino Chacabuco Tinto",
+      "desc": "Vino tinto Chacabuco",
+      "price": null,
+      "img": "img/vino-chacabuco-tinto.jpg"
+    },
+    {
+      "name": "Vino Chacabuco Blanco",
+      "desc": "Vino blanco Chacabuco",
+      "price": null,
+      "img": "img/vino-chacabuco-blanco.jpg"
+    },
+    {
+      "name": "Vino Chacabuco Chenin",
+      "desc": "Vino Chacabuco Chenin",
+      "price": null,
+      "img": "img/vino-chacabuco-chenin.jpg"
+    },
+    {
+      "name": "Vino Portillo Tinto",
+      "desc": "Vino tinto Portillo",
+      "price": null,
+      "img": "img/vino-portillo-tinto.jpg"
+    },
+    {
+      "name": "Vino Portillo Blanco",
+      "desc": "Vino blanco Portillo",
+      "price": null,
+      "img": "img/vino-portillo-blanco.jpg"
+    }
+  ]
+}
